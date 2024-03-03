@@ -1,0 +1,389 @@
+header.headeractive {
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    border-bottom: 1px solid var(--cornflower_Blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+
+.home_sec {
+    background-position: center;
+}
+
+.custome_text {
+    justify-content: space-between;
+}
+
+.card {
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: #212529;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(0,0,0,0.175);
+    border-radius: 1rem;
+}
+
+.card-top{
+    border-top-left-radius: calc(1rem - 2px);
+    border-top-right-radius: calc(1rem - 2px);
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.card-title{
+    margin-bottom: 0.5rem;
+}
+.header_text ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.header_text ul li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--black);
+    font-family: "Whyte_Regular";
+    transition: 0.2s ease-in-out;
+    padding: 15px 0px;
+}
+
+.header_text ul li a:hover {
+    color: var(--cornflower_Blue);
+}
+
+.button button {
+    padding: 10px 20px;
+    background-color: #99CA3A;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.header_text {
+    position: fixed;
+    display: none;
+    top: 185px;
+    width: 100%;
+    padding-block: 3rem 2rem;
+    transition: all 0.40s ease-in-out;
+    transition: all .9s;
+    z-index: 999;
+    height: 100vh;
+    background-color: var(--Periwinkle_Blue);
+    background-color: #99CA3A;
+    backdrop-filter: blur(14px);
+    text-align: center;
+}
+
+.header_text.active {
+    width: 100%;
+    display: block;
+    right: 0;
+}
+
+.header_text ul li {
+    display: block;
+    width: 90%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 19px 19px 19px 7pxs;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.active_link {
+    color: #000;
+}
+
+.data_btn {
+    display: none;
+}
+
+/* 
+  .active_link {
+    color: var(--cornflower_Blue) !important;
+  }
+  
+  .active_link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--cornflower_Blue);
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  } */
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+  }
+
+.footer .input-group {
+    justify-content: left;
+}
+
+.bar_col {
+    display: block;
+}
+
+.col_50_custome {
+    width: 100%;
+}
+
+.bar {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    padding: 8px 0;
+}
+
+.bar i {
+    font-size: 30px;
+    color: var(--cornflower_Blue);
+}
+
+/* ----------- header end ---------- */
+/* .col50text {
+    text-align: center;
+} */
+
+
+.col45text h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.col45text h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.awsbutton button {
+    background-color: aliceblue;
+    color: #99CA3A;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+.topbar_header .contact-info {
+    text-align: left;
+}
+
+.col50img {
+    text-align: center;
+}
+
+.col50img img {
+    width: 100%;
+    display: block;
+}
+
+.row_revser {
+    flex-wrap: wrap-reverse !important;
+}
+
+.col50img h3 {
+    color: #99CA3A;
+    margin: 6px 10px;
+    text-align: end;
+}
+
+.footer_text {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer_text p {
+    text-align: left;
+    text-align-last: left;
+}
+
+.footer_text img {
+
+    height: 35px;
+    display: block;
+    margin: 0 10px;
+    object-fit: contain;
+    margin-top: -20px;
+}
+
+
+.Btn_handle br {
+    display: block;
+}
+
+/* ----------- media query start ---------- */
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .header_text {
+        top: 140px;
+    }
+
+    .col50text {
+        text-align: left;
+    }
+
+    .col50text .button {
+        text-align: left;
+    }
+
+    .col_50_custome {
+        width: 50%;
+    }
+
+    .col50img {
+        text-align: end;
+    }
+
+    .col50img img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+    }
+
+    .col50img h3 {
+        color: #99CA3A;
+        margin: 5px;
+    }
+
+    .Btn_handle br {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+
+    .bar_col,
+    .bar {
+        display: none;
+    }
+
+    .dot_active::after {
+        top: 70px;
+    }
+
+    .header_text ul li {
+        display: inline-block;
+        padding: 0;
+        font-size: 1rem;
+        width: auto;
+        margin: 0;
+    }
+
+    .header_text {
+        height: auto;
+        display: block;
+        position: static;
+        padding: 0px 0;
+        background: none;
+        transition: none;
+        backdrop-filter: blur(0px);
+    }
+
+    .header_text ul li a {
+        padding: 0 5px;
+    }
+
+    .data_btn {
+        display: block;
+    }
+
+    .button button {
+        padding: 10px 40px;
+        background-color: #99CA3A;
+        color: white;
+        border: none;
+        border-radius: 40px;
+    }
+
+    .col45text h2 {
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    .col45text h3 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .awsbutton button {
+        background-color: aliceblue;
+        color: #99CA3A;
+        /* padding: 10px 20px; */
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .topbar_header {
+        justify-content: space-between;
+    }
+
+    .row_revser {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}

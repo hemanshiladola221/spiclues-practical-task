@@ -1,0 +1,22 @@
+
+
+[
+    {
+        "id":1,
+        "img":"./images/cardsecimg1.png",
+        "h5text":"登記免費試堂",
+        "ptext":"登記手機後，我們的課程顧問會第一時間與您取得聯系"
+    },
+    {
+        "id":2,
+        "img":"./images/cardsecimg2.png",
+        "h5text":"安排北美外籍老師小班",
+        "ptext":"在取得聯繫後，會您的孩子安排小班制北美外教試聽課體驗"
+    },
+    {
+        "id":3,
+        "img":"./images/cardsecimg3.png",
+        "h5text":"進入線上課堂",
+        "ptext":"下載我們的上課APP，開始和外教上課"
+    }
+]
